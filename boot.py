@@ -19,7 +19,7 @@ def startApp():
 def _otaUpdate():
     #ulogging.info('Checking for Updates...')
     from ota_updater import OTAUpdater
-    otaUpdater = OTAUpdater('https://github.com/sensorwifi/sensor_box', main_dir='app')
+    otaUpdater = OTAUpdater('https://github.com/sensorwifi/ota_door', main_dir='app')
     sn=otaUpdater.get_latest_version()
     print(sn)
     otaUpdater._copy_secrets_file()
